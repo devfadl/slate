@@ -1,0 +1,145 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:wght@400;600&display=swap');
+
+/*************************/
+/* Custom Classes */
+
+.btn-link.btn-muted{
+    color: #c5c5c5;
+}
+.btn-link,
+.btn-link.active{
+    padding: 5px;
+    color: #12785D;
+}
+.btn-link:focus {
+    border: 0;
+    box-shadow: none;
+    /* outline: 2px auto #eee; */
+    text-decoration: none;
+}
+.pb-hover:hover,
+.pb-hover.active{
+    opacity: 1;
+    color: #12785D;
+    border-bottom: 2px solid #12785D;
+    text-decoration: none;
+}
+/*************************/
+/* Page Style */
+.wss-kcbody{
+    background: #eee url('../img/pattern.svg') repeat;
+    background-size: 20%;
+    font-size: 14px;
+    font-weight: normal;
+}
+[dir="ltr"] .wss-kcbody{
+    font-family: 'Poppins',Helvetica,"sans-serif";
+}
+[dir="rtl"] .wss-kcbody{
+    font-family: 'Almarai',Helvetica,"sans-serif";
+}
+.wss-kclogin{
+    height: 100vh;
+}
+.card{
+    width: 80%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 30px;
+    /* margin: 0 auto; */
+}
+
+.card .left{
+    flex: 1;
+    /* height: 580px; */
+}
+.card .left .img-container{
+    background: linear-gradient(0deg, rgba(18,120,93,0.8) 0%, rgba(18,120,93,0.5) 100%), url('../img/bg-1.jpg') ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-position: center;
+    background-size: 510%;
+}
+.card .right{
+    flex: 1.5;
+    padding: 20px;
+}
+
+
+@media (max-width: 992px){
+    .card{
+        flex-direction: column;
+    }
+}
+@media (max-width:767px){
+    .action-group.d-flex{
+        flex-direction: column;
+    }
+}
+@media (max-height: 720px){
+    .wss-kclogin{
+        height: calc(100vh + 30vh);
+    }
+}
+                
+/* Lang Switcher */
+
+#kc-locale{
+    position:absolute;
+    top: 12px;
+    right: 8px;
+}
+
+button[type=submit] {
+    text-decoration: none;
+    outline: none;
+}
+
+a.dropbtn {
+  background-color: #12785D !important;
+  color: white;
+  padding: 8px 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration:none;
+  border-radius:4px;
+font-size:14px
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #12785D !important;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  list-style:none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding:0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  font-size:14px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
